@@ -6,10 +6,12 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { "Mattt Thompson" => "m@mattt.me" }
   s.source       = { :git => "https://github.com/flipstudio/AFAmazonS3Client.git", 
-                     :branch => "flipFork" }
+                     :tag => "0.1.1f" }
 
   s.source_files = 'AFAmazonS3Client'
   s.requires_arc = true
+
+  s.ios.deployment_target = '5.0'
 
   s.dependency 'AFNetworking', '~> 1.0'
 end
