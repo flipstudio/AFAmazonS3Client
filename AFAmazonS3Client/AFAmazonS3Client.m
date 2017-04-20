@@ -357,7 +357,8 @@ NSString * AFBase64EncodedStringFromData(NSData *data) {
 {
 	if (_accessKey && _secret)
 	{
-		NSString *canonicalizedResource = [NSString stringWithFormat:@"/%@%@", _bucket, request.URL.path];
+		NSString *path = [request.URL.path stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+		NSString *canonicalizedResource = [NSString stringWithFormat:@"/%@%@", _bucket, path];
 		NSString *contentMD5 = [request valueForHTTPHeaderField:@"Content-MD5"] ?: @"";
 		NSString *contentType = [request valueForHTTPHeaderField:@"Content-Type"] ?: @"";
 		NSString *date = AFRFC822FormatStringFromDate([NSDate date]);
