@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FAFAmazonS3Client"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "AFNetworking Client for the Amazon S3 API."
   s.homepage     = "https://github.com/AFNetworking/AFAmazonS3Client"
   s.license      = 'MIT'
