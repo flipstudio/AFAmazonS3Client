@@ -5,8 +5,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/AFNetworking/AFAmazonS3Client"
   s.license      = 'MIT'
   s.author       = { "Mattt Thompson" => "m@mattt.me" }
-  s.source       = { :git => "https://github.com/AFNetworking/AFAmazonS3Client.git", 
-                     :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/flipstudio/AFAmazonS3Client.git",
+                     :branch => "flipFork" }
 
   s.source_files = 'AFAmazonS3Client'
   s.requires_arc = true
